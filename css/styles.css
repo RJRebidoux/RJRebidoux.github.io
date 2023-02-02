@@ -1,0 +1,92 @@
+/* General */
+
+body {
+  background: rgb(23, 23, 23);
+  color: lightgray;
+}
+
+/* Typography */
+
+html {
+  font-family: "Fira Sans", sans-serif;
+}
+
+/*Added colour to my headers*/
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+/*Added a zebra pattern to the tables as well as the lists*/
+tbody tr:nth-child(odd),
+body ul li:nth-child(odd),
+body ol li:nth-child(odd) {
+  background-color: rgb(57, 57, 57);
+}
+
+p {
+  font-weight: 300;
+  line-height: 18px;
+}
+
+/*Added style to the nav links*/
+body nav a {
+  gap: 32px;
+  text-decoration: none;
+  outline: none;
+  padding: 15px;
+  color: rgb(28, 206, 54);
+}
+
+/*Setting the default link colour to green*/
+a {
+  color: rgb(40, 179, 61);
+}
+
+/*setting the default visited link colour to green*/
+a:visited {
+  color: rgb(25, 122, 6);
+}
+
+nav a:focus {
+  background-color: rgb(40, 179, 61);
+  color: rgb(19, 19, 19);
+}
+
+nav a:hover {
+  background-color: rgb(40, 179, 61);
+  color: rgb(22, 22, 22);
+}
+
+nav a:active {
+  background-color: rgb(25, 122, 6);
+  color: rgb(193, 193, 193);
+}
+
+/* Layout */
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  gap: 32px;
+}
+
+#features > div {
+  flex: 1;
+}
+
+/*Added a green shadow behind the image to give it a neon look*/
+img {
+  max-height: 300px;
+  width: auto;
+  box-shadow: 0px 5px 5px 2px rgb(28, 206, 54);
+}
+
+main section {
+  padding: 60px 20px 0 20px;
+}
